@@ -11,7 +11,8 @@
 		1BED482228BCE6F40036A2C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED482128BCE6F40036A2C9 /* ContentView.swift */; };
 		1BED482428BCE6F40036A2C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BED482328BCE6F40036A2C9 /* Assets.xcassets */; };
 		1BED482728BCE6F40036A2C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BED482628BCE6F40036A2C9 /* Preview Assets.xcassets */; };
-		E61236C428BDBADC00C5612B /* ProfileTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61236C328BDBADC00C5612B /* ProfileTab.swift */; };
+		1BED482E28BCF3C70036A2C9 /* testView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED482D28BCF3C70036A2C9 /* testView.swift */; };
+		1BED486028BD24770036A2C9 /* testView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED485F28BD24770036A2C9 /* testView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +21,8 @@
 		1BED482128BCE6F40036A2C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1BED482328BCE6F40036A2C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BED482628BCE6F40036A2C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E61236C328BDBADC00C5612B /* ProfileTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTab.swift; sourceTree = "<group>"; };
+		1BED482D28BCF3C70036A2C9 /* testView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testView.swift; sourceTree = "<group>"; };
+		1BED485F28BD24770036A2C9 /* testView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,8 @@
 			children = (
 				1BED481F28BCE6F40036A2C9 /* ProbnbApp.swift */,
 				1BED482128BCE6F40036A2C9 /* ContentView.swift */,
+				1BED485F28BD24770036A2C9 /* testView2.swift */,
+				1BED482D28BCF3C70036A2C9 /* testView.swift */,
 				1BED482328BCE6F40036A2C9 /* Assets.xcassets */,
 				1BED482528BCE6F40036A2C9 /* Preview Content */,
 				E61236C328BDBADC00C5612B /* ProfileTab.swift */,
@@ -86,6 +90,8 @@
 			dependencies = (
 			);
 			name = Probnb;
+			packageProductDependencies = (
+			);
 			productName = Probnb;
 			productReference = 1BED481C28BCE6F40036A2C9 /* Probnb.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +120,8 @@
 				Base,
 			);
 			mainGroup = 1BED481328BCE6F40036A2C9;
+			packageReferences = (
+			);
 			productRefGroup = 1BED481D28BCE6F40036A2C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,6 +151,8 @@
 				E61236C428BDBADC00C5612B /* ProfileTab.swift in Sources */,
 				1BED482228BCE6F40036A2C9 /* ContentView.swift in Sources */,
 				1BED482028BCE6F40036A2C9 /* ProbnbApp.swift in Sources */,
+				1BED482E28BCF3C70036A2C9 /* testView.swift in Sources */,
+				1BED486028BD24770036A2C9 /* testView2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
