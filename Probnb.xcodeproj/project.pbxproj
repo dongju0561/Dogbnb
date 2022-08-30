@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B2D2B2F28BE823A00B1481E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2D2B2E28BE823A00B1481E /* SearchView.swift */; };
 		1B45819828BE5AC1003954A7 /* ProbnbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45819328BE5AC1003954A7 /* ProbnbApp.swift */; };
 		1B45819928BE5AC1003954A7 /* HotelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45819428BE5AC1003954A7 /* HotelData.swift */; };
 		1B45819A28BE5AC1003954A7 /* ProfileTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45819528BE5AC1003954A7 /* ProfileTab.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B2D2B2E28BE823A00B1481E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		1B45819328BE5AC1003954A7 /* ProbnbApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProbnbApp.swift; path = Probnb/ProbnbApp.swift; sourceTree = SOURCE_ROOT; };
 		1B45819428BE5AC1003954A7 /* HotelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HotelData.swift; path = Probnb/HotelData.swift; sourceTree = SOURCE_ROOT; };
 		1B45819528BE5AC1003954A7 /* ProfileTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTab.swift; path = Probnb/ProfileTab.swift; sourceTree = SOURCE_ROOT; };
@@ -57,10 +59,11 @@
 		1BED481E28BCE6F40036A2C9 /* Probnb */ = {
 			isa = PBXGroup;
 			children = (
+				1B45819328BE5AC1003954A7 /* ProbnbApp.swift */,
 				1B45819728BE5AC1003954A7 /* ContentView.swift */,
+				1B2D2B2E28BE823A00B1481E /* SearchView.swift */,
 				1B45819428BE5AC1003954A7 /* HotelData.swift */,
 				1B45819628BE5AC1003954A7 /* HotelInformation.swift */,
-				1B45819328BE5AC1003954A7 /* ProbnbApp.swift */,
 				1B45819528BE5AC1003954A7 /* ProfileTab.swift */,
 				1BED482328BCE6F40036A2C9 /* Assets.xcassets */,
 				1BED482528BCE6F40036A2C9 /* Preview Content */,
@@ -154,6 +157,7 @@
 				1B45819928BE5AC1003954A7 /* HotelData.swift in Sources */,
 				1B45819C28BE5AC1003954A7 /* ContentView.swift in Sources */,
 				1B45819828BE5AC1003954A7 /* ProbnbApp.swift in Sources */,
+				1B2D2B2F28BE823A00B1481E /* SearchView.swift in Sources */,
 				1B45819B28BE5AC1003954A7 /* HotelInformation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
