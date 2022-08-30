@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BED482028BCE6F40036A2C9 /* ProbnbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED481F28BCE6F40036A2C9 /* ProbnbApp.swift */; };
-		1BED482228BCE6F40036A2C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BED482128BCE6F40036A2C9 /* ContentView.swift */; };
+		1B45819828BE5AC1003954A7 /* ProbnbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45819328BE5AC1003954A7 /* ProbnbApp.swift */; };
+		1B45819928BE5AC1003954A7 /* HotelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45819428BE5AC1003954A7 /* HotelData.swift */; };
+		1B45819A28BE5AC1003954A7 /* ProfileTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45819528BE5AC1003954A7 /* ProfileTab.swift */; };
+		1B45819B28BE5AC1003954A7 /* HotelInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45819628BE5AC1003954A7 /* HotelInformation.swift */; };
+		1B45819C28BE5AC1003954A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45819728BE5AC1003954A7 /* ContentView.swift */; };
 		1BED482428BCE6F40036A2C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BED482328BCE6F40036A2C9 /* Assets.xcassets */; };
 		1BED482728BCE6F40036A2C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BED482628BCE6F40036A2C9 /* Preview Assets.xcassets */; };
- 
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B45819328BE5AC1003954A7 /* ProbnbApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProbnbApp.swift; path = Probnb/ProbnbApp.swift; sourceTree = SOURCE_ROOT; };
+		1B45819428BE5AC1003954A7 /* HotelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HotelData.swift; path = Probnb/HotelData.swift; sourceTree = SOURCE_ROOT; };
+		1B45819528BE5AC1003954A7 /* ProfileTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTab.swift; path = Probnb/ProfileTab.swift; sourceTree = SOURCE_ROOT; };
+		1B45819628BE5AC1003954A7 /* HotelInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HotelInformation.swift; path = Probnb/HotelInformation.swift; sourceTree = SOURCE_ROOT; };
+		1B45819728BE5AC1003954A7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = Probnb/ContentView.swift; sourceTree = SOURCE_ROOT; };
 		1BED481C28BCE6F40036A2C9 /* Probnb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Probnb.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BED481F28BCE6F40036A2C9 /* ProbnbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProbnbApp.swift; sourceTree = "<group>"; };
-		1BED482128BCE6F40036A2C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1BED482328BCE6F40036A2C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BED482628BCE6F40036A2C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
- 
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,13 +57,13 @@
 		1BED481E28BCE6F40036A2C9 /* Probnb */ = {
 			isa = PBXGroup;
 			children = (
-				1BED481F28BCE6F40036A2C9 /* ProbnbApp.swift */,
-				1BED482128BCE6F40036A2C9 /* ContentView.swift */,
-				1BED485F28BD24770036A2C9 /* testView2.swift */,
-				1BED482D28BCF3C70036A2C9 /* testView.swift */,
+				1B45819728BE5AC1003954A7 /* ContentView.swift */,
+				1B45819428BE5AC1003954A7 /* HotelData.swift */,
+				1B45819628BE5AC1003954A7 /* HotelInformation.swift */,
+				1B45819328BE5AC1003954A7 /* ProbnbApp.swift */,
+				1B45819528BE5AC1003954A7 /* ProfileTab.swift */,
 				1BED482328BCE6F40036A2C9 /* Assets.xcassets */,
 				1BED482528BCE6F40036A2C9 /* Preview Content */,
-				E61236C328BDBADC00C5612B /* ProfileTab.swift */,
 			);
 			path = Probnb;
 			sourceTree = "<group>";
@@ -146,11 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E61236C428BDBADC00C5612B /* ProfileTab.swift in Sources */,
-				1BED482228BCE6F40036A2C9 /* ContentView.swift in Sources */,
-				1BED482028BCE6F40036A2C9 /* ProbnbApp.swift in Sources */,
-				1BED482E28BCF3C70036A2C9 /* testView.swift in Sources */,
-				1BED486028BD24770036A2C9 /* testView2.swift in Sources */,
+				1B45819A28BE5AC1003954A7 /* ProfileTab.swift in Sources */,
+				1B45819928BE5AC1003954A7 /* HotelData.swift in Sources */,
+				1B45819C28BE5AC1003954A7 /* ContentView.swift in Sources */,
+				1B45819828BE5AC1003954A7 /* ProbnbApp.swift in Sources */,
+				1B45819B28BE5AC1003954A7 /* HotelInformation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
