@@ -39,14 +39,31 @@ struct ContentView: View {
                                     .scaledToFit()
                                     .cornerRadius(30)
                                     .frame(width: 300, height: 220)
+                                HStack{
+                                    Text(Hotels.hotel1.name)
+                                        .padding(.leading)
+                                        .font(.system(size: 15))
+                                        .foregroundColor(.black)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                    Spacer()
+                                    Image(systemName: "star.fill").foregroundColor(.gray)
+                                    Text("\(Hotels.hotel1.score, specifier: "%.2f")")
+                                        .foregroundColor(.gray)
+                                        .padding(.trailing)
+                                }
+                                
                                 Text(Hotels.hotel1.location)
                                     .padding(.leading)
-                                    .font(.system(size: 25))
+                                    .font(.system(size: 10))
+                                    .foregroundColor(.gray)
                                     .frame(maxWidth: .infinity, alignment: .leading)
-                                Text(Hotels.hotel1.name)
+                                
+                                Text("₩ \(Hotels.hotel1.Sprice)/박")
+                                    .foregroundColor(.black)
+                                    .font(.system(size: 15))
+                                    .fontWeight(.bold)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
                                     .padding(.leading)
-                                    .font(.system(size: 25))
-                                    .frame(maxWidth: .infinity, alignment: .leading)
                             }
                                 
                                 
@@ -54,31 +71,73 @@ struct ContentView: View {
                         }
                         NavigationLink(destination: HotelInformation()){
                             VStack{
-                                Image("dog2")
+                                Image(uiImage: Hotels.hotel2.image[0])
                                     .resizable()
                                     .scaledToFit()
                                     .cornerRadius(30)
                                     .frame(width: 300, height: 220)
-                                Text("so cute")
+                                HStack{
+                                    Text(Hotels.hotel2.name)
+                                        .padding(.leading)
+                                        .font(.system(size: 20))
+                                        .foregroundColor(.black)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                    Spacer()
+                                    Image(systemName: "star.fill").foregroundColor(.gray)
+                                    Text("\(Hotels.hotel2.score, specifier: "%.2f")")
+                                        .foregroundColor(.gray)
+                                        .padding(.trailing)
+                                }
+                                Text(Hotels.hotel2.location)
                                     .padding(.leading)
-                                    .font(.system(size: 25))
+                                    .font(.system(size: 15))
+                                    .foregroundColor(.gray)
                                     .frame(maxWidth: .infinity, alignment: .leading)
+                                
+                                Text("₩ \(Hotels.hotel2.Sprice)/박")
+                                    .foregroundColor(.black)
+                                    .font(.system(size: 15))
+                                    .fontWeight(.bold)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                    .padding(.leading)
                             }
                                 
                         }
                         NavigationLink(destination: HotelInformation()){
                             VStack{
-                                Image("dog3")
+                                Image(uiImage: Hotels.hotel3.image[0])
                                     .resizable()
                                     .scaledToFit()
                                     .cornerRadius(30)
                                     .frame(width: 300, height: 220)
-                                Text("so cute")
+                                HStack{
+                                    Text(Hotels.hotel3.name)
+                                        .padding(.leading)
+                                        .font(.system(size: 20))
+                                        .foregroundColor(.black)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                    Spacer()
+                                    Image(systemName: "star.fill").foregroundColor(.gray)
+                                    Text("\(Hotels.hotel3.score, specifier: "%.2f")")
+                                        .foregroundColor(.gray)
+                                        .padding(.trailing)
+                                }
+                                Text(Hotels.hotel3.location)
                                     .padding(.leading)
-                                    .font(.system(size: 25))
+                                    .font(.system(size: 15))
+                                    .foregroundColor(.gray)
                                     .frame(maxWidth: .infinity, alignment: .leading)
+                                
+                                Text("₩ \(Hotels.hotel3.Sprice)/박")
+                                    .foregroundColor(.black)
+                                    .font(.system(size: 15))
+                                    .fontWeight(.bold)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                    .padding(.leading)
+                                
                             }
                         }
+                        Spacer()
                     }
                         .tabItem {
                             Image(systemName: "magnifyingglass")
@@ -104,11 +163,10 @@ struct ContentView: View {
                             Text("메시지")
 
                         }.tag(4)
-                    Text("Tab Content 2")
+                    ProfileTab()
                         .tabItem {
                             Image(systemName: "person")
                             Text("프로필")
-
                         }.tag(5)
                 }
             }
