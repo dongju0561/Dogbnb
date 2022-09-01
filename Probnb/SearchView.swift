@@ -10,10 +10,11 @@ import SwiftUI
 
 
 struct SearchView: View{
+    @State var isSelected: Bool = false
+    @State var Hotels = RegisteredHotel.self()
     init() {
         UITabBar.appearance().backgroundColor = #colorLiteral(red: 0.886066258, green: 0.886066258, blue: 0.886066258, alpha: 1)
     }
-    var Hotels = RegisteredHotel()
     
     var body: some View{
         VStack(){
@@ -34,13 +35,15 @@ struct SearchView: View{
                 .frame(height: 60)
                 .background( Color(#colorLiteral(red: 0.886066258, green: 0.886066258, blue: 0.886066258, alpha: 1)))
             ScrollView{
-                NavigationLink(destination: HotelInformation()){
+                NavigationLink(destination: HotelInformation(selectedHotel: $Hotels.hotel1)){
+                    
                     VStack{
                         Image(uiImage: Hotels.hotel1.image[0])
                             .resizable()
                             .scaledToFit()
                             .cornerRadius(30)
                             .frame(width: 300, height: 220)
+                        
 
                         
                         HStack{
@@ -71,7 +74,7 @@ struct SearchView: View{
                             .padding(.leading)
                     }
                 }
-                NavigationLink(destination: HotelInformation()){
+                NavigationLink(destination: HotelInformation(selectedHotel: $Hotels.hotel2)){
                     VStack{
                         Image(uiImage: Hotels.hotel2.image[0])
                             .resizable()
@@ -106,7 +109,7 @@ struct SearchView: View{
                     }
                         
                 }
-                NavigationLink(destination: HotelInformation()){
+                NavigationLink(destination: HotelInformation(selectedHotel: $Hotels.hotel3)){
                     VStack{
                         Image(uiImage: Hotels.hotel3.image[0])
                             .resizable()

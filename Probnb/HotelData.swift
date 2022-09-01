@@ -24,7 +24,7 @@ struct HotelData {
     }
 }
 
-struct RegisteredHotel {
+struct RegisteredHotel{
      var hotel1 = HotelData(name: "THE SHILLA", location: "249, Dongho-ro, Jung-gu, Seoul, Republic of Korea"
                             , image: [#imageLiteral(resourceName: "닥스훈트1"), #imageLiteral(resourceName: "닥스훈트3"), #imageLiteral(resourceName: "닥스훈트2")], price: 134000, score: 4.97)
     var hotel2 = HotelData(name: "HYATT", location: " 322 Sowol-ro, Yongsan-gu, Seoul, Republic of Korea"
