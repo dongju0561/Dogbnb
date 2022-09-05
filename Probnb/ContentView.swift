@@ -12,10 +12,10 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView{
-                TabView {
+                TabView { //하단의 탭바
                     SearchView()
                         .tabItem {
-                            Image(systemName: "magnifyingglass")
+                            Image(systemName: "magnifyingglass") //첫번째 탭바의 이미지
                             Text("검색")
                         }.tag(1)
                     

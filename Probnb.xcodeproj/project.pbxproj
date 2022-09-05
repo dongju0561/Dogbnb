@@ -95,8 +95,6 @@
 			dependencies = (
 			);
 			name = Probnb;
-			packageProductDependencies = (
-			);
 			productName = Probnb;
 			productReference = 1BED481C28BCE6F40036A2C9 /* Probnb.app */;
 			productType = "com.apple.product-type.application";
@@ -125,8 +123,6 @@
 				Base,
 			);
 			mainGroup = 1BED481328BCE6F40036A2C9;
-			packageReferences = (
-			);
 			productRefGroup = 1BED481D28BCE6F40036A2C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
