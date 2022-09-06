@@ -13,7 +13,7 @@ struct SearchView: View{
     @State var isSelected: Bool = false
     @State var Hotels = RegisteredHotel.self()
     init() {
-        UITabBar.appearance().backgroundColor = #colorLiteral(red: 0.886066258, green: 0.886066258, blue: 0.886066258, alpha: 1)
+        UITabBar.appearance().backgroundColor = #colorLiteral(red: 0.886066258, green: 0.886066258, blue: 0.886066258, alpha: 1) //탭바 색깔 변경
     }
     
     var body: some View{
@@ -55,7 +55,7 @@ struct SearchView: View{
                                 .frame(maxWidth: .infinity, alignment: .leading)
                             Spacer()
                             Image(systemName: "star.fill").foregroundColor(.gray)
-                            Text("\(Hotels.hotel1.score, specifier: "%.2f")")
+                            Text("\(Hotels.hotel1.rate, specifier: "%.2f")")
                                 .foregroundColor(.gray)
                                 .padding(.trailing)
                         }
@@ -90,7 +90,7 @@ struct SearchView: View{
                                 .frame(maxWidth: .infinity, alignment: .leading)
                             Spacer()
                             Image(systemName: "star.fill").foregroundColor(.gray)
-                            Text("\(Hotels.hotel2.score, specifier: "%.2f")")
+                            Text("\(Hotels.hotel2.rate, specifier: "%.2f")")
                                 .foregroundColor(.gray)
                                 .padding(.trailing)
                         }
@@ -125,7 +125,7 @@ struct SearchView: View{
                                 .frame(maxWidth: .infinity, alignment: .leading)
                             Spacer()
                             Image(systemName: "star.fill").foregroundColor(.gray)
-                            Text("\(Hotels.hotel3.score, specifier: "%.2f")")
+                            Text("\(Hotels.hotel3.rate, specifier: "%.2f")")
                                 .foregroundColor(.gray)
                                 .padding(.trailing)
                         }
@@ -149,6 +149,7 @@ struct SearchView: View{
         }
     }
 }
+
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
