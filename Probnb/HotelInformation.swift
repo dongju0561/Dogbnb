@@ -111,9 +111,11 @@ struct HotelInformation: View {
         }
     }
 }
-//
+
 //struct HotelInfo_preview: PreviewProvider {
+//    @State var hotels = RegisteredHotel.self()
+//
 //    static var previews: some View{
-//        HotelInformation(selectedHotel: $Hotels.hotel1)
+//      HotelInformation(selectedHotel: $hotels.hotel1)
 //    }
 //}

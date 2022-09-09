@@ -15,6 +15,9 @@
 		1B45819C28BE5AC1003954A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45819728BE5AC1003954A7 /* ContentView.swift */; };
 		1BED482428BCE6F40036A2C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BED482328BCE6F40036A2C9 /* Assets.xcassets */; };
 		1BED482728BCE6F40036A2C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BED482628BCE6F40036A2C9 /* Preview Assets.xcassets */; };
+		E675576A28CAF702000A6E98 /* MessageTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E675576928CAF702000A6E98 /* MessageTab.swift */; };
+		E675576D28CAF73F000A6E98 /* MessageButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E675576C28CAF73F000A6E98 /* MessageButtonView.swift */; };
+		E675576F28CAF76D000A6E98 /* MessageAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E675576E28CAF76D000A6E98 /* MessageAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		1BED481C28BCE6F40036A2C9 /* Probnb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Probnb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BED482328BCE6F40036A2C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BED482628BCE6F40036A2C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E675576928CAF702000A6E98 /* MessageTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTab.swift; sourceTree = "<group>"; };
+		E675576C28CAF73F000A6E98 /* MessageButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageButtonView.swift; sourceTree = "<group>"; };
+		E675576E28CAF76D000A6E98 /* MessageAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,8 @@
 				1B45819628BE5AC1003954A7 /* HotelInformation.swift */,
 				1B45819428BE5AC1003954A7 /* HotelData.swift */,
 				1B45819528BE5AC1003954A7 /* ProfileTab.swift */,
+				E675576928CAF702000A6E98 /* MessageTab.swift */,
+				E675576B28CAF71B000A6E98 /* MessageTabGroup */,
 				1BED482328BCE6F40036A2C9 /* Assets.xcassets */,
 				1BED482528BCE6F40036A2C9 /* Preview Content */,
 			);
@@ -77,6 +85,15 @@
 				1BED482628BCE6F40036A2C9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E675576B28CAF71B000A6E98 /* MessageTabGroup */ = {
+			isa = PBXGroup;
+			children = (
+				E675576C28CAF73F000A6E98 /* MessageButtonView.swift */,
+				E675576E28CAF76D000A6E98 /* MessageAlertView.swift */,
+			);
+			path = MessageTabGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,10 +167,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B45819A28BE5AC1003954A7 /* ProfileTab.swift in Sources */,
+				E675576A28CAF702000A6E98 /* MessageTab.swift in Sources */,
 				1B45819928BE5AC1003954A7 /* HotelData.swift in Sources */,
 				1B45819C28BE5AC1003954A7 /* ContentView.swift in Sources */,
 				1B45819828BE5AC1003954A7 /* ProbnbApp.swift in Sources */,
 				1B2D2B2F28BE823A00B1481E /* SearchView.swift in Sources */,
+				E675576D28CAF73F000A6E98 /* MessageButtonView.swift in Sources */,
+				E675576F28CAF76D000A6E98 /* MessageAlertView.swift in Sources */,
 				1B45819B28BE5AC1003954A7 /* HotelInformation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,6 +11,7 @@ struct ProfileTab: View {
   let sectionName: [String] = ["계정 관리", "호스팅", "추천 및 여행 크레딧", "도구", "에어비앤비 지원", "법률"]
 // 양쪽 사이드 여백: 6.15% x2
 // GeometryReader로 Profile frame, Guide Frame, TableView 묶기
+  var forEachSectionBoundary : ClosedRange<Int>
 
     var body: some View {
         NavigationView {
@@ -20,97 +21,44 @@ struct ProfileTab: View {
               .padding(.bottom)
 
             // Banner
-            HStack {
-              Image("EmptySpace")
-                .resizable()
-                .frame(width: 50, height: 50)
-                .padding(.bottom)
-              VStack{
-                Text("남는 공간을 활용해 수입을 올리세요.")
-                Text("자세히 알아보기")
-                  .underline()
-                  .font(.system(size: 15))
-                  .padding(.bottom)
-              }
-            }
-            .listRowSeparator(.hidden, edges: .top)
+            ProfileBannerView()
 
+            // ProfileListView + ForEachSection
+            ForEach(forEachSectionBoundary, id: \.self){ itemIndex in
+              Section(header: Text("\(sectionName[itemIndex])")
+                    .font(.system(size: 24))
+                    .foregroundColor(.black)
+                    .padding(.bottom)
 
-            // 계정 관리
-            Section(header: Text("\(sectionName[0])")
-                  .font(.system(size: 24))
-                  .foregroundColor(.black)
-                  .padding(.bottom)
-              ) {
-                ProfileListView(forEachBoundary: 0...4)
-              }
-
-            // 호스팅
-            Section(header: Text("\(sectionName[1])")
-                  .font(.system(size: 24))
-                  .foregroundColor(.black)
-                  .padding(.bottom)
-              ) {
-                ProfileListView(forEachBoundary: 5...6)
-              }
-
-            Section(header: Text("\(sectionName[2])")
-                  .font(.system(size: 24))
-                  .foregroundColor(.black)
-                  .padding(.bottom)
-              ) {
-              ProfileListView(forEachBoundary: 7...7)
-              }
-
-            Section(header: Text("\(sectionName[3])")
-                  .font(.system(size: 24))
-                  .foregroundColor(.black)
-                  .padding(.bottom)
-              ) {
-                ProfileListView(forEachBoundary: 8...8)
-              }
-
-            Section(header: Text("\(sectionName[4])")
-                  .font(.system(size: 24))
-                  .foregroundColor(.black)
-                  .padding(.bottom)
-              ) {
-                ProfileListView(forEachBoundary: 9...13)
-              }
-
-            Section(header: Text("\(sectionName[4])")
-                  .font(.system(size: 24))
-                  .foregroundColor(.black)
-                  .padding(.bottom)
-              ) {
-                ProfileListView(forEachBoundary: 14...16)
-              }
-
-
-
-
-
+                ) {
+                switch itemIndex {
+                  case 0: ProfileListView(forEachBoundary: 0...4)
+                  case 1: ProfileListView(forEachBoundary: 5...6)
+                  case 2: ProfileListView(forEachBoundary: 7...7)
+                  case 3: ProfileListView(forEachBoundary: 8...8)
+                  case 4: ProfileListView(forEachBoundary: 9...13)
+                  case 5: ProfileListView(forEachBoundary: 14...16)
+                  default: ProfileListView(forEachBoundary: 0...4)
+                    }
+                  }
+                }
           }//List
           .listStyle(.plain)
           .navigationBarHidden(true)
 
+
+
         }//NavigationView
-
-
-
-
-
-
       }//someView
     }//ProfileTabView
 
-// MARK: - View
-
 struct ProfileTab_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileTab()
+      ProfileTab(forEachSectionBoundary: 0...5)
     }
 }
+
+// MARK: - View
 
 struct ProfileNavigatorView: View {
   var body: some View {
@@ -136,6 +84,25 @@ struct ProfileNavigatorView: View {
     }// profile frame
     .frame(maxWidth: .infinity, alignment: .leading)
     .padding([.top, .bottom], 10)
+  }
+}
+
+struct ProfileBannerView: View {
+  var body: some View {
+    HStack {
+      Image("EmptySpace")
+        .resizable()
+        .frame(width: 50, height: 50)
+        .padding(.bottom)
+      VStack{
+        Text("남는 공간을 활용해 수입을 올리세요.")
+        Text("자세히 알아보기")
+          .underline()
+          .font(.system(size: 15))
+          .padding(.bottom)
+      }
+    }
+    .listRowSeparator(.hidden, edges: .top)
   }
 }
 
