@@ -19,8 +19,6 @@ struct MessageTab: View {
             MessageButtonView().tag(0)
             MessageAlertView().tag(1)
           }
-
-
         }
         .navigationTitle("메시지함")
 
@@ -84,7 +82,6 @@ struct TabBarItem: View {
         .animation(.spring(), value: self.currentTab)
       }
     .buttonStyle(.plain)
-
   }
 }
 
