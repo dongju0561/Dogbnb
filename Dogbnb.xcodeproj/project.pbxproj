@@ -34,7 +34,7 @@
 		1B063B1528D070F700A60303 /* MessageAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageAlertView.swift; sourceTree = "<group>"; };
 		1B063B1628D070F700A60303 /* MessageButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageButtonView.swift; sourceTree = "<group>"; };
 		1B063B1928D0711C00A60303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1BED481C28BCE6F40036A2C9 /* Probnb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Probnb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BED481C28BCE6F40036A2C9 /* Dogbnb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dogbnb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B063B1B28D075B000A60303 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				1B063B1528D070F700A60303 /* MessageAlertView.swift */,
+				1B063B1628D070F700A60303 /* MessageButtonView.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		1BED481328BCE6F40036A2C9 = {
 			isa = PBXGroup;
 			children = (
@@ -59,7 +68,7 @@
 		1BED481D28BCE6F40036A2C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1BED481C28BCE6F40036A2C9 /* Probnb.app */,
+				1BED481C28BCE6F40036A2C9 /* Dogbnb.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,28 +76,28 @@
 		1BED481E28BCE6F40036A2C9 /* Probnb */ = {
 			isa = PBXGroup;
 			children = (
+				1B063B1B28D075B000A60303 /* New Group */,
 				1B063B0A28D070BD00A60303 /* AccommodationType.swift */,
 				1B063B0428D070BD00A60303 /* DogbnbApp.swift */,
 				1B063B0228D070BD00A60303 /* HotelData.swift */,
 				1B063B0828D070BD00A60303 /* HotelInformation.swift */,
 				1B063B0928D070BD00A60303 /* MessageTab.swift */,
-				1B063B1528D070F700A60303 /* MessageAlertView.swift */,
-				1B063B1628D070F700A60303 /* MessageButtonView.swift */,
-				1B063B0328D070BD00A60303 /* Preview Content */,
 				1B063B0528D070BD00A60303 /* ProfileTab.swift */,
 				1B063B0628D070BD00A60303 /* SearchView.swift */,
 				1B063B0728D070BD00A60303 /* tabView.swift */,
+				1B063B0328D070BD00A60303 /* Preview Content */,
 				1B063B1928D0711C00A60303 /* Assets.xcassets */,
 			);
-			path = Probnb;
+			name = Probnb;
+			path = Dogbnb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1BED481B28BCE6F40036A2C9 /* Probnb */ = {
+		1BED481B28BCE6F40036A2C9 /* Dogbnb */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1BED482A28BCE6F40036A2C9 /* Build configuration list for PBXNativeTarget "Probnb" */;
+			buildConfigurationList = 1BED482A28BCE6F40036A2C9 /* Build configuration list for PBXNativeTarget "Dogbnb" */;
 			buildPhases = (
 				1BED481828BCE6F40036A2C9 /* Sources */,
 				1BED481928BCE6F40036A2C9 /* Frameworks */,
@@ -98,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = Probnb;
+			name = Dogbnb;
 			productName = Probnb;
-			productReference = 1BED481C28BCE6F40036A2C9 /* Probnb.app */;
+			productReference = 1BED481C28BCE6F40036A2C9 /* Dogbnb.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +128,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1BED481728BCE6F40036A2C9 /* Build configuration list for PBXProject "Probnb" */;
+			buildConfigurationList = 1BED481728BCE6F40036A2C9 /* Build configuration list for PBXProject "Dogbnb" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,7 +141,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1BED481B28BCE6F40036A2C9 /* Probnb */,
+				1BED481B28BCE6F40036A2C9 /* Dogbnb */,
 			);
 		};
 /* End PBXProject section */
@@ -292,7 +301,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Probnb/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Dogbnb/Preview Content\"";
 				DEVELOPMENT_TEAM = 9TAZSB82Y8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -306,7 +315,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = pdj.Probnb;
+				PRODUCT_BUNDLE_IDENTIFIER = pdj.Dogbnb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -323,7 +332,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Probnb/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Dogbnb/Preview Content\"";
 				DEVELOPMENT_TEAM = 9TAZSB82Y8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -337,7 +346,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = pdj.Probnb;
+				PRODUCT_BUNDLE_IDENTIFIER = pdj.Dogbnb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -348,7 +357,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1BED481728BCE6F40036A2C9 /* Build configuration list for PBXProject "Probnb" */ = {
+		1BED481728BCE6F40036A2C9 /* Build configuration list for PBXProject "Dogbnb" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1BED482828BCE6F40036A2C9 /* Debug */,
@@ -357,7 +366,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1BED482A28BCE6F40036A2C9 /* Build configuration list for PBXNativeTarget "Probnb" */ = {
+		1BED482A28BCE6F40036A2C9 /* Build configuration list for PBXNativeTarget "Dogbnb" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1BED482B28BCE6F40036A2C9 /* Debug */,
